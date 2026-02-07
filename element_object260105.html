@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>오브젝트</title>
+    </head>
+    <script>
+        function check(){
+            if(f1.agree.checked == true){
+                f1.email.disabled = false;
+                f1.submit.disabled = false;
+            }else{
+                f1.email.disabled = true;
+                f1.submit.disabled = true;
+            }
+        }
+    </script>
+    <body>
+        <form action = './process.php' method = 'post' name = 'f1'>
+            <textarea cols = '60' rows = '10'>
+                Welcome to k-training.com...
+            </textarea><br>
+            <input type="checkbox" name = 'agree' onclick="check()">
+            I accept the terms of service<br><br>
+            <input type = 'text' name = 'email' disabled><br><br>
+            <input type = 'submit' value = 'OK' name = 'submit' disabled>
+        </form>
+    </body>
+</html>

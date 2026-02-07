@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>자바스크립트</title>
+    <meta charset="utf-8">
+    <script>
+        function openWin() {
+            popup = window.open('test.html', '', 'width=300, height = 500');
+        }
+        function closeWin() {
+            popup.close();
+        }
+    </script>
+</head>
+
+<body onload = 'openWin()'>
+    <input type='button' value='OPEN' oncClick='openWin()'>
+    <input type='button' value='CLOSE' onClick='closeWin()'>
+</body>
+
+</html>

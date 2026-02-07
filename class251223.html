@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='ko'>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>HTML실습</title>
+</head>
+
+<body bgcolor="skyblue">
+    <marquee>학교 홈페이지로 이동할 수 있습니다.</marquee>
+
+    <style>
+        #test {
+            animation: slide 15s linear infinite;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translatex(0%)
+            }
+
+            100% {
+                transform: translatex(100%);
+            }
+        }
+    </style>
+    <p id='test'>움직이는 문자열</p>
+
+    <marquee direction='right' width='500' height='300' bgcolor='skyblue'>
+        <a href='https://www.bu.ac.kr'>
+            <img src='./icon.cloud.png' title='학교 홈페이지' width='300'>
+        </a>
+    </marquee><br>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th><a href = 'https://www.bu.ac.kr'>page1</a></th>
+            <th><a href = 'https://www.bu.ac.kr'>page2</a></th>
+            <th><a href = 'https://www.bu.ac.kr'>page3</a></th>
+        </tr>
+
+        <tr>
+            <td><a href = 'https://www.bu.ac.kr'></a>page4</td>
+            <td><a href = 'https://www.bu.ac.kr'>page5</td>
+            <td><a href = 'https://www.bu.ac.kr'>page6</td>
+        </tr>
+
+    </table>
+</body>
+
+</html>

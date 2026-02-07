@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>학교 선택</title>
+</head>
+<script>
+    function check(){
+        switch(f1.school.value){
+            case 'seoul' : 
+            f1.location.value = '서울시 관악구';
+            form.c1.checked = true;
+            form.c2.checked = true;
+            form.c3.checked = false;
+            form.c4.checked = false;
+            break;
+            case 'bu' : 
+            f1.location.value = '천안시 동남구';
+            form.c1.checked = true;
+            form.c2.checked = true;
+            form.c3.checked = TreeW;
+            form.c4.checked = false;
+            break;
+            case 'none' : 
+            f1.location.value = '';
+            break;
+        }
+
+    }
+</script>
+
+<body>
+    <form action='#' method='post' name='f1'></form>
+    <select name='school' onchange="check()">
+        <option value="none">-- 학교 선택 --</option>
+        <option value="seoul">-- 백석대학교 --</option>
+        <option value="bu">-- 서울대학교 --</option>
+    </select>
+    </form>
+</body>
+
+</html>

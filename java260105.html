@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>자바스크립트</title>
+    <style>
+        td {
+            border: 1px solid black;
+            text-align: center;
+            width: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var seat = new Array();
+
+        document.write("<table border = '1' width = '300'>");
+        document.writs("<tr>");
+        for (var i = 0; i < 50; i++) {
+            document.write(seat[i]);
+            document.write("<td>" + seat[i] + "</td>");
+            
+                if (i % 10 == 0) {
+                    document.write("</tr><tr>")
+                }
+            
+        }
+        document.write("</tr>");
+        document.write("</table>");
+    </script>
+
+</body>
+
+</html>

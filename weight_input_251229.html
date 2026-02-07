@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>다이어트 유무 판별기</title>
+</head>
+
+<body>
+    <form action='process_test.php' method='post'>
+        Name : <input type="text" name='uname' placeholder="이름을 입력하세요." required><br>
+        ID : <input type='text' name='uid' placeholder="아이디를 입력하세요." required autofocus><br>
+        PW : <input type='password' name='upd' placeholder="비밀번호를 입력하세요." required><br>
+        Age : <input type="number" name='age' placeholder="나이를 선택하세요." required><br>
+
+        만족도 : <input type="range" name="scroll"><br>
+        <input type='checkbox' name='c1' value='check' checked>선택1<br>
+        <input type='checkbox' name='c2' value='check'>선택2<br>
+
+        <input type='radio' name='r1' value='선택3' checked>선택3-1<br>
+        <input type='radio' name='r1' value='선택4'>선택3-2<br>
+
+        <input type='submit' value="회원가입">
+
+    </form>
+</body>
+
+</html>
